@@ -1,0 +1,251 @@
+h1,
+h2,
+h3,
+a,
+.button,
+.footer {
+    font-family: "Righteous", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+#mobileMenu{ 
+    display: none;
+}
+
+#froki {
+    position: fixed;
+    z-index: -1;
+    /* Set a lower z-index */
+    display: block;
+    margin: 0 auto;
+    animation: swing 3s ease-in-out infinite;
+    transform-origin: top center;
+}
+
+
+@keyframes swing {
+    0% {
+        transform: rotate(0deg);
+        /* Initial position */
+    }
+
+
+    50% {
+        transform: rotate(8deg);
+        /* Return to initial position */
+    }
+
+    100% {
+        transform: rotate(0deg);
+        /* Back to initial position */
+    }
+}
+
+#hero-bg {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    /* Ensures content stays within bounds */
+}
+
+#hero-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/src/images/Group\ 5.png');
+    background-repeat: repeat-x;
+    /* Ensure the image repeats horizontally */
+    background-size: 1800px;
+    /* Maintain the aspect ratio and scale height to fit the container */
+    background-position: 0 center;
+    /* Start the background at the center */
+    z-index: 2;
+    animation: moveBackground 20s linear infinite;
+    /* Smooth and continuous animation */
+    pointer-events: none;
+}
+
+#hero-bg-content {
+    position: relative;
+    z-index: 3;
+}
+
+#copied-message {
+    position: absolute;
+    background-color: #000;
+    color: #fff;
+    margin-top: 50px;
+    left: 20%;
+    transform: translateX(-50%);
+    padding: 5px 10px;
+    border-radius: 10px;
+    z-index: 100;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#buyImage {
+    transition: transform;
+    pointer-events: none;
+    overflow-x: hidden;
+}
+
+@keyframes backgroundFloat {
+    0% {
+        background-position: 20% center;
+    }
+    50% {
+        background-position: 20% 44%;
+    }
+    100% {
+        background-position: 20% center;
+    }
+}
+
+.board {
+    width: 100%;
+    height: 100%;
+    background-image: url("/src/images/Group 3.png");
+    background-repeat: no-repeat;
+    background-size: inherit;
+    background-position: 20% center;
+    animation: backgroundFloat 2s ease-in-out infinite;
+}
+
+@keyframes teacherBackgroundFloat {
+    0% {
+        background-position: top center;
+    }
+    50% {
+        background-position: center 8% ;
+    }
+    100% {
+        background-position: top center;
+    }
+}
+
+.teacher {
+    background-image: url("/src/images/Group 4.svg");
+    background-repeat: no-repeat;
+    background-size: inherit;
+    background-position: top center;
+
+    animation: teacherBackgroundFloat 2s ease-in-out infinite;
+}
+
+
+@keyframes moveBackground {
+    0% {
+        background-position: 0 center;
+        /* Start at the original position */
+    }
+
+    100% {
+        background-position: 1800px center;
+        /* Move exactly the width of the image */
+    }
+}
+
+
+.rotate-animation {
+    animation: rotate 25s linear infinite;
+    transition: transform 0.1s ease;
+    /* Adjust the duration (10s) as needed */
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    #copied-message {
+        left: 50%;
+    }
+
+    #buyImage {
+        scale: 1.04;
+
+    }
+
+    #froki {
+        position: relative;
+    }
+
+    .teacher {
+        background-size: contain;
+    }
+
+    #hero-bg::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('/src/images/Group\ 5.png');
+        background-repeat: repeat-x;
+        /* Ensure the image repeats horizontally */
+        background-size: 800px;
+        /* Maintain the aspect ratio and scale height to fit the container */
+        background-position: 0 center;
+        /* Start the background at the center */
+        z-index: 2;
+        animation: moveBackgroundMobile 10s linear infinite;
+        /* Smooth and continuous animation */
+        pointer-events: none;
+    }
+
+    .teacher {
+        background-image: none;
+    }
+    
+
+    @keyframes moveBackgroundMobile {
+        0% {
+            background-position: 0 center;
+            /* Start at the original position */
+        }
+
+        100% {
+            background-position: 800px center;
+            /* Move exactly the width of the image */
+        }
+    }
+
+}
+
+
+/* Overall background */
+.bg {
+    background-image: url('/src/images/Vector.jpg');
+    background-position: center;
+    background-size: cover;
+}

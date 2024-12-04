@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet">
+    <title>FROKI</title>
+    <link rel="stylesheet" href="/src/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/dd61ecb53f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    
+    <section class="bg">
+        
+        <div id="hero-bg">
+            <section class="container mx-auto relative z-50">
+                <div></div>
+                <div>
+                    <div class="flex px-4 md:gap-20 lg:gap-32 text-3xl py-4 relative z-50 hidden md:flex">
+                        <a href="#tokenomics">Tokenomics</a>
+                        <a href="#howToBuy">How To Buy</a>
+                        <a href="#faq">FAQ's</a>
+                    </div>
+                    <button onclick="openMenu()" class="md:hidden flex ml-auto justify-end py-10 px-8">
+                        <i class="fa-solid fa-bars fa-xl"></i>
+                    </button>
+                    <div id="mobileMenu" class="absolute md:hidden rounded-2xl w-[220px] top-20 right-4 text-center text-xl p-6 border-[3px] border-black bg-[#F3FAFE] skew-x-6">
+                        <li class="list-none"><a href="#tokenomics">Tokenomics</a></li>
+                        <li class="list-none py-4"><a href="#howToBuy">How To Buy</a></li>
+                        <li class="list-none"><a href="#faq">FAQ's</a></li>
+                    </div>
+                </div>
+            </section>
+            <div id="hero" class="relative container mx-auto md:mt-[-80px]"> <!-- Make this parent relative -->
+                
+                <div class="px-4 lg:px-0 container h-full lg:h-[700px] mx-auto grid grid-cols-1 md:grid-cols-12 gap-0">
+                    
+                    <!-- Left Column: Title and Text (8 columns on medium screens and larger) -->
+                    <div class="md:col-span-7 flex flex-col justify-end md:pb-10 text-white order-1 md:pt-32 lg:pt-0">
+                        <img class="w-full px-4" src="/src/images/Asset 1 1.png" alt="">
+                        <h2 class="text-lg md:text-2xl text-black mt-4 text-center md:text-left">They call me FROKI, <br>
+                            but you can call me tonight.</h2>
+
+                        <div id="copy-section" class="py-2 px-8 bg-[#D9E5ED] gap-4 flex w-fit mt-4 rounded-xl mx-auto md:mx-0">
+                            <h3 class="text-black md:text-2xl ">CA: TKzpNa...ozAYa</h3>
+                            <button id="copy" class="button px-3 bg-[#CF0F04] rounded-lg">Copy</button>
+                            <div id="copied-message" style="display: none;">Copied!</div>
+                        </div>
+                        
+                    </div>
+
+                    <!-- Right Column: Image (5 columns on medium screens and larger) -->
+                    <div class="md:col-span-5 flex justify-center order-2">
+                        <!-- Change fixed to absolute -->
+                        <img id="froki" class="md:w-[500px] lg:w-[800px] fixed" src="/src/images/hero 1.svg" alt="Your Image">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-12">
+                <div class="md:col-span-6">
+                    <img class="w-full" src="/src/images/Untitled-6 1.png" alt="">
+                </div>
+                <div class="md:col-span-4"></div>
+            </div>
+        </div>
+
+        <div class="w-full relative z-20">
+            <img src="/src/images/Group 2.svg" alt="Divider" class=" md:w-full mt-[-20%] mb-[-5%] md:mb-[-60px]">
+        </div>
+    </section>
+
+    <section id="whoIsFroki" class="bg-[#FFDD9F] pt-14 md:pt-20 z-10 relative">
+        <div class="text-black text-center">
+            <h1 class="text-5xl md:text-8xl">Who is FROKI ?!</h1>
+            <h2 class="text-2xl mt-4">
+                Froki is your frog best friend. <br>
+                You can buy in eth blockchain <br>
+                nice too meet you.
+            </h2>
+
+            <button class="button bg-white text-black rounded-3xl text-4xl md:text-6xl px-16 py-4 mt-4">BUY NOW</button>
+        </div>
+    </section>
+
+
+    <section id="popcornChar" class="relative z-20 bg-[#FFDD9F] pt-6 md:pt-0">
+        <div class="">
+            <img id="buyImage" class="relative z-20 mx-auto md:pt-20" src="/src/images/buy nowww 1.png" alt="">
+        </div>
+    </section>
+
+
+    <section id="howToBuy" class="relative z-10 bg-[#F0A97D] grid grid-cols-1 md:grid-cols-12 gap-0 pt-10 md:pt-20 px-4 md:px-0">
+        <div class="board relative md:col-span-6 flex justify-start md:justify-end md:pb-10">
+            <img class="w-[300px] md:w-fit" src="/src/images/teacher2 1.svg" alt="">
+        </div>
+
+        <div class="teacher md:col-span-6 flex justify-end md:justify-start mt-[-120px] md:mt-0">
+            <img class="w-[300px] md:w-fit self-end z-10" src="src/images/teacher 1.svg" alt="">
+        </div>
+    </section>
+
+
+    <section class="z-20 relative absolute bg-[#FFDD9F]">
+        <img class="w-full" src="/src/images/asd 2.png" alt="">
+    </section>
+
+    <section id="faq">
+        <div
+            class="grid grid-cols-1 md:grid-cols-12 md:gap-14 justify-center bg-[#FFDD9F] relative z-10 py-10 md:py-20">
+            <div class="col-span-6 flex justify-end p-4">
+                <img id="daFroki" class="w-fit rotate-animation" src="/src/images/socials.svg" alt="">
+            </div>
+
+            <div class="col-span-6 flex items-center justify-start">
+
+                <!-- FAQ -->
+                <div class="flex w-full md:mt-10">
+                    <div class="flex flex-col gap-8 p-6 w-full max-w-2xl">
+                        <div class="flex flex-col gap-6">
+                            <h2 class="text-6xl md:text-8xl text-gray-900">
+                                FAQ's
+                            </h2>
+                            <dl class="space-y-2 md:space-y-4">
+                                <!-- FAQ Item 1 -->
+                                <div>
+                                    <dt>
+                                        <button
+                                            class="button flex items-center justify-between w-full py-2 text-lg md:text-xl text-left font-medium text-gray-900"
+                                            type="button" aria-expanded="false" onclick="toggleFAQ(this)">
+                                            <span>What's the best thing about Switzerland?</span>
+                                            <span class="flex items-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                    class="h-6 w-6 text-gray-800 open-icon" fill="none"
+                                                    viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="1.5" d="M12 6v12m6-6H6"></path>
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                    class="h-6 w-6 text-gray-800 close-icon hidden" fill="none"
+                                                    viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="1.5" d="M18 12H6"></path>
+                                                </svg>
+                                            </span>
+                                        </button>
+                                    </dt>
+                                    <dd class="faq-content hidden">
+                                        <p class="mt-2 text-gray-800">The flag is a big plus.</p>
+                                    </dd>
+                                </div>
+
+                                <!-- FAQ Item 2 -->
+                                <div>
+                                    <dt>
+                                        <button
+                                            class="button flex items-center justify-between w-full py-2 text-lg md:text-xl text-left font-medium text-gray-900"
+                                            type="button" aria-expanded="false" onclick="toggleFAQ(this)">
+                                            <span>How do you make holy water?</span>
+                                            <span class="flex items-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                    class="h-6 w-6 text-gray-800 open-icon" fill="none"
+                                                    viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="1.5" d="M12 6v12m6-6H6"></path>
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                    class="h-6 w-6 text-gray-800 close-icon hidden" fill="none"
+                                                    viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="1.5" d="M18 12H6"></path>
+                                                </svg>
+                                            </span>
+                                        </button>
+                                    </dt>
+                                    <dd class="faq-content hidden">
+                                        <p class="mt-2 text-gray-800">You boil the hell out of it.</p>
+                                    </dd>
+                                </div>
+
+                                <!-- FAQ Item 3 -->
+                                <div>
+                                    <dt>
+                                        <button
+                                            class="button flex items-center justify-between w-full py-2 text-lg md:text-xl text-left font-medium text-gray-900"
+                                            type="button" aria-expanded="false" onclick="toggleFAQ(this)">
+                                            <span>What do you call someone with no body and no nose?</span>
+                                            <span class="flex items-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                    class="h-6 w-6 text-gray-800 open-icon" fill="none"
+                                                    viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="1.5" d="M12 6v12m6-6H6"></path>
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                    class="h-6 w-6 text-gray-800 close-icon hidden" fill="none"
+                                                    viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="1.5" d="M18 12H6"></path>
+                                                </svg>
+                                            </span>
+                                        </button>
+                                    </dt>
+                                    <dd class="faq-content hidden">
+                                        <p class="mt-2 text-gray-800">Nobody knows.</p>
+                                    </dd>
+                                </div>
+
+                                <!-- FAQ Item 4 -->
+                                <div>
+                                    <dt>
+                                        <button
+                                            class="button flex items-center justify-between w-full py-2 text-lg md:text-xl text-left font-medium text-gray-900"
+                                            type="button" aria-expanded="false" onclick="toggleFAQ(this)">
+                                            <span>Why do you never see elephants hiding in trees?</span>
+                                            <span class="flex items-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                    class="h-6 w-6 text-gray-800 open-icon" fill="none"
+                                                    viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="1.5" d="M12 6v12m6-6H6"></path>
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                    class="h-6 w-6 text-gray-800 close-icon hidden" fill="none"
+                                                    viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="1.5" d="M18 12H6"></path>
+                                                </svg>
+                                            </span>
+                                        </button>
+                                    </dt>
+                                    <dd class="faq-content hidden">
+                                        <p class="mt-2 text-gray-800">Because they are so good at it.</p>
+                                    </dd>
+                                </div>
+
+                                <!-- FAQ Item 5 -->
+                                <div>
+                                    <dt>
+                                        <button
+                                            class="button flex items-center justify-between w-full py-2 text-lg md:text-xl text-left font-medium text-gray-900"
+                                            type="button" aria-expanded="false" onclick="toggleFAQ(this)">
+                                            <span>Why can't you hear a pterodactyl go to the bathroom?</span>
+                                            <span class="flex items-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                    class="h-6 w-6 text-gray-800 open-icon" fill="none"
+                                                    viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="1.5" d="M12 6v12m6-6H6"></path>
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                    class="h-6 w-6 text-gray-800 close-icon hidden" fill="none"
+                                                    viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="1.5" d="M18 12H6"></path>
+                                                </svg>
+                                            </span>
+                                        </button>
+                                    </dt>
+                                    <dd class="faq-content hidden">
+                                        <p class="mt-2 text-gray-800">Because the P is silent.</p>
+                                    </dd>
+                                </div>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="footer relative z-10">
+        <div class="container grid-cols-1 md:grid-cols-12 md:flex justify-between mx-auto items-center py-4 bg-white px-4">
+            <div class="col-span-4 flex justify-center md:justify-start">
+                <span>©2024 FROKI, all rights reserved</span>
+            </div>
+            <div class="contract flex justify-center md:justify-end col-span-4">
+                <span>CA: TKzpNaEabGH2FJogwZetsXuSnHdcMozAYa</span>
+                <div class="hidden md:flex grid grid-cols-3 gap-2 col-span-4 items-center justify-end ml-6">
+                    <a href="#"><i class="fa-brands fa-twitter fa-xl"></i></a>
+                    <a href="#"><i class="fa-brands fa-telegram fa-xl"></i></a>
+                    <a href="#"><img src="/src/images/dextools.svg" width="24" alt=""></a>
+                </div>
+            </div>
+            <div class=" md:hidden flex items-center justify-center gap-3 mt-6">
+                <a href="#"><i class="fa-brands fa-twitter fa-xl"></i></a>
+                <a href="#"><i class="fa-brands fa-telegram fa-xl"></i></a>
+                <a href="#"><img src="/src/images/dextools.svg" width="24" alt=""></a>
+            </div>
+        </div>
+    </section>
+</body>
+
+<!-- <style>
+    h1,
+    h2,
+    h3,
+    button,
+    .footer {
+        font-family: "Righteous", sans-serif;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    #froki {
+        position: fixed;
+        z-index: -1;
+        /* Set a lower z-index */
+        display: block;
+        margin: 0 auto;
+        animation: swing 3s ease-in-out infinite;
+        transform-origin: top center;
+    }
+
+
+    @keyframes swing {
+        0% {
+            transform: rotate(0deg);
+            /* Initial position */
+        }
+
+
+        50% {
+            transform: rotate(8deg);
+            /* Return to initial position */
+        }
+
+        100% {
+            transform: rotate(0deg);
+            /* Back to initial position */
+        }
+    }
+
+    #hero-bg {
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        /* Ensures content stays within bounds */
+    }
+
+    #hero-bg::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('/src/images/Group\ 5.png');
+        background-repeat: repeat-x;
+        /* Ensure the image repeats horizontally */
+        background-size: 1800px;
+        /* Maintain the aspect ratio and scale height to fit the container */
+        background-position: 0 center;
+        /* Start the background at the center */
+        z-index: 2;
+        animation: moveBackground 10s linear infinite;
+        /* Smooth and continuous animation */
+        pointer-events: none;
+    }
+
+    #hero-bg-content {
+        position: relative;
+        z-index: 3;
+    }
+
+    #buyImage {
+        transition: transform;
+    }
+
+    .board {
+        width: 100%;
+        height: 100%;
+        background-image: url("/src/images/Group\ 3.png");
+        background-repeat: no-repeat;
+        background-size: inherit;
+        background-position: 20% center;
+    }
+
+    /* .teacher {
+        background-image: url("/src/images/Group\ 4.svg");
+        background-repeat: no-repeat;
+        background-size: inherit;
+        background-position: top center;
+        display: flex;
+        justify-content: center;
+    }  */
+
+    .container{
+        position: relative;
+        overflow: hidden;
+    }
+
+    .container img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: contain;
+    }
+
+    @keyframes moveBackground {
+        0% {
+            background-position: 0 center;
+            /* Start at the original position */
+        }
+
+        100% {
+            background-position: 1800px center;
+            /* Move exactly the width of the image */
+        }
+    }
+
+    .rotate-animation {
+        animation: rotate 25s linear infinite;
+        transition: transform 0.1s ease;
+        /* Adjust the duration (10s) as needed */
+    }
+
+    @keyframes rotate {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+
+    @media only screen and (max-width: 768px) {
+        #froki {
+            position: relative;
+        }
+
+        .teacher {
+            background-size: contain;
+        }
+
+        #hero-bg::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('/src/images/Group\ 5.png');
+            background-repeat: repeat-x;
+            /* Ensure the image repeats horizontally */
+            background-size: 500px;
+            /* Maintain the aspect ratio and scale height to fit the container */
+            background-position: 0 center;
+            /* Start the background at the center */
+            z-index: 2;
+            animation: moveBackgroundMobile 10s linear infinite;
+            /* Smooth and continuous animation */
+            pointer-events: none;
+        }
+
+        @keyframes moveBackgroundMobile {
+            0% {
+                background-position: 0 center;
+                /* Start at the original position */
+            }
+
+            100% {
+                background-position: 500px center;
+                /* Move exactly the width of the image */
+            }
+        }
+
+    }
+
+
+    /* Overall background */
+    .bg {
+        background-image: url('/src/images/Vector.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+</style>  -->
+<script src="/src/script.js"></script>
+
+</html>
